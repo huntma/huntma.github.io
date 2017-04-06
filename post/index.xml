@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Hunt Ma</title>
+    <link>http://huntma.github.io/post/index.xml</link>
+    <description>Recent content in Posts on Hunt Ma</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Apr 2017 22:16:26 -0700</lastBuildDate>
+    <atom:link href="http://huntma.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Trials and Tribulations Using Facedetect on Texas Instrument LCDK OMAP-L138</title>
+      <link>http://huntma.github.io/post/LCDK/</link>
+      <pubDate>Wed, 05 Apr 2017 22:16:26 -0700</pubDate>
+      
+      <guid>http://huntma.github.io/post/LCDK/</guid>
+      <description>
+
+&lt;h2 id=&#34;a-digital-signal-processing-project&#34;&gt;A Digital Signal Processing Project&lt;/h2&gt;
+
+&lt;h3 id=&#34;how-to-use-this-post&#34;&gt;How to Use This Post&lt;/h3&gt;
+
+&lt;p&gt;There is a lot of content. I recommend skimming the document to get an idea of what might be useful as pertains to your project.&lt;/p&gt;
+
+&lt;h3 id=&#34;note&#34;&gt;Note&lt;/h3&gt;
+
+&lt;p&gt;This document references OpenCV 1.x. Here is the &lt;a href=&#34;http://huntma.github.io/file/cv1x.pdf&#34;&gt;reference manual&lt;/a&gt;. As of writing, it is an old version, but we used it because TI StarterWare&amp;rsquo;s Facedetect demo uses this. It will require more advanced knowledge to try and use a newer verson of OpenCV as this involves compiling from source to the ARM processor in your LCDK. More at the end of the guid&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t be afraid of the complexity of the demo&lt;/strong&gt;&lt;br /&gt;
+The code is complicated, but you don&amp;rsquo;t have to know every part in order to do the project well. It is too easy to get sucked into the void of trying to understand everything. Use the reference manual that comes with the class. You are only going to be interested in certain interrupts and tasks because that is where the magic happens. The document explains it decent, but here is my take to give you a little more. Anything with Setup in the name you can ignore.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;main() is just setup for the program, you won&amp;rsquo;t need to mess with it.&lt;/li&gt;
+&lt;li&gt;facedetectTask is where the detection actually happens.&lt;/li&gt;
+&lt;li&gt;LCDIsr is the interrupt service routine to draw to the output. Edit this to have different outputs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Yes it takes a long time to build and run&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;The only thing you can do is be efficient with your time&lt;/em&gt;&lt;br /&gt;
+One thing I noticed with the LCDK CCS setup is that every time you make a change to the code and want to test it out, you will have to wait at least a couple of minutes. This is extremely frustrating when you are trying to work fast, but it is a limitation that we can&amp;rsquo;t avoid without a lot of research. What I did to max&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Detect Circles&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;One line of code will allow you to detect circles instead.&lt;/em&gt;&lt;br /&gt;
+So you&amp;rsquo;ve got it working. Now let us change it to detect circles and give you a taste that changing the code is not as hard as it seems. Go to facedetectTask and comment out the Haar detection line. We will replace it with an included function in OpenCV.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/* Apply OpenCV haardetect algorithm */
+//dsp_sequence = cvHaarDetectObjects(image, cascade, storage, 2.5, 2, 0,cvSize(30, 30));
+
+/* Apply OpenCV Hough Circles algorithm */  
+dsp_sequence = cvHoughCircles(image, storage, CV_HOUGH_GRADIENT, 2, image-&amp;gt;width/6, 100, 50, 0, 0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;cvHoughCircles uses a transform on the image to detect circles. There are multiple parameters to the function which you can change. Try the ones I have here to start and reference the manual to play with it yourself. Note that the program will crash if it detects too many circles at once. We also have to draw the circles to the output. Remember that this involves editing LCDIsr. My code is below. Thanks to Aditya Kotte who pioneered this.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;c = (float *) cvGetSeqElem(dsp_sequence2, i);
+CvPoint pt = cvPoint(cvRound(c[0]), cvRound(c[1]));
+int radius = cvRound(c[2]);
+cvCircle(image1, pt, radius, blue, 2, 8, 0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Using custom HaarClassifier Cascades&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;Loading your own HaarClassifier is very difficult&lt;/em&gt;&lt;br /&gt;
+You will not be able to cvLoad a new HaarClassifierCascade.xml easily. I ran into very cryptic errors when trying to do this that would require a very deep understanding of the LCDK OMAPL138 to fix.&lt;/p&gt;
+
+&lt;p&gt;The facedetect uses HaarClassifier Cascades to do their facedetect. This is stored in a variable called buffer as an array of ints. Somehow they converted the .xml file into data that would go into memory and hardcoded it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Trying to Use Newer OpenCV&lt;/strong&gt;
+&lt;em&gt;Research ARM-EABI cross compile OpenCV&lt;/em&gt;
+This will point you in the right direction. If you are not a computer science major, you may not understand what this means. That&amp;rsquo;s okay, I didn&amp;rsquo;t either, we are here to learn. Here&amp;rsquo;s the lowdown to get you started on how to learn it. Two major instruction sets are x86 and ARM. When we write programs in any code, they are compiled so that they become machine instructions that the CPU can read them. We have the source for OpenCV on the internet, easily accessible. The LCDK uses an ARM chip. It is embedded, so there is no operating system on the LCDK (well technically there is a BIOS, which I&amp;rsquo;m actually not sure how that will affect). But we want EABI (Embedded Application Binary Interface - ABI&amp;rsquo;s are a whole other topic). If there was an operating system, there would be a need to compile for the different operating systems as well (Linux, Windows, MacOS being the major ones). Each operating system has different requirements for executables, and you also knew the hardware does too. Confusing I know. If you actually complete this please contact me! I would love to know. Then cross compiling is just the term we use when we want to compile a program for different platforms.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Where to Put Your Project File&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;Having the working project file in your flashdrive will ensure nothing gets changed.&lt;/em&gt;&lt;br /&gt;
+Save your CCS project on your flashdrive. This will prevent the host computer changes in between your sessions to affect your project. Your project will still reference library files located on the computer.&lt;/p&gt;
+
+&lt;p&gt;You might get some error with missing GEL files or missing dependencies. This is okay. The GUI for CCS is nice enough that you can click through it and it will let you find your file. When you installed the Starterware, it should have downloaded other dependencies in the Program Files -&amp;gt; Texas Instruments (or ti) folder. One of them is &lt;strong&gt;pdk_C6748_2_0_0_0&lt;/strong&gt;. The error in CCS should tell you. Actually what I did is I just copied the dependencies needed into the same project folder on my flash so that it would contain the full set of files needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Manipulating CvSequence&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;Understand that sequences are linked lists&lt;/em&gt;&lt;br /&gt;
+This is a confusing structure because some of OpenCV&amp;rsquo;s structs are made from sequences, but you can also use a sequence to hold things. How it relates to you is that if you are using findContours, then a sequence of contours is returned. Then also note that contours are sequence of points. Here is a quick example of how to access the points in the sequence&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for(current=dsp_sequence; current != NULL; current=current-&amp;gt;h_next) {
+	for(j=0; j &amp;lt; current-&amp;gt;total; j++) {
+		CvPoint* pt = (CvPoint*)cvGetSeqElem(dsp_sequence,j);
+		printf(&amp;quot;   hello the (x,y) is : (%d, %d)\n&amp;quot;,pt-&amp;gt;x,pt-&amp;gt;y);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The outer loop traverses the sequence of contours(which are also cvSequences). The inner loop will traverse the points of that contour. Notice that I use a typcast to CvPpoint when I use cvGetSeqElem and store it in a temporary CvPoint. This typcast is needed. You can refer to the manual for more info. Which leads into the next tip.&lt;/p&gt;
+
+&lt;p&gt;Note that OpenCV defines many objects themselves. Look at the manual to see. There are cvPoints, cvFonts, and more.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Refer to source code&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;The manual is not 100% accurate, so you will need your C knowledge to infer&lt;/em&gt;&lt;br /&gt;
+When the manual is wrong. Right-click and use open function declaration in order to inspect the source code. This is a neat tool provided by CCS that will automatically open the file and display the function. This is most useful when figuring out what arguments to pass into the function.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Doing Image Processing&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;An easier project is to do image processing, but you will need to make changes&lt;/em&gt;&lt;br /&gt;
+You will need to include highgui.lib if you want to load and save images. For some reason this library was not built into the facedetect demo. Thhe reasoning is probably because facedetect doesn&amp;rsquo;t use any of the functions from it. Andrew Ho has built a highgui.lib from source that you can just include in your project. Do it by placing the file in your /bin folder of the project folder and then going to project properties going to C6000 linker. Then actually include it in your main c file with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;quot;highgui.h&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You may also need the highgui.h header file from the source code. But you can get that from SourceForge. Here is the file for the &lt;a href=&#34;http://huntma.github.io/file/highgui.lib&#34;&gt;highgui.lib&lt;/a&gt; file.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://huntma.github.io/image/highgui.PNG&#34; alt=&#34;highgui.lib bin folder placement&#34; /&gt;&lt;br /&gt;
+&lt;em&gt;Image: Shows where exactly to put the lib file in your project folder.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Loading and Saving Images&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;Use cvLoadImage and cvSaveImage.&lt;/em&gt;&lt;br /&gt;
+cvLoadImage will allow you to load bmp images. If you are doing it in Paint, save them as 256-bit images. Note that this does take a long time for any appreciably sized images. Just note to use the correct path. Debugging which path to use took me a couple of hours.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;const char* source = &amp;quot;C:/Users/EE113D/Desktop/template.bmp&amp;quot;;
+IplImage * image = cvLoadImage(source, CV_LOAD_IMAGE_COLOR);
+//the second parameter to the function in all CAPS is just to let the program know the file is a 256-bit color image. You will need that
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;cvSaveImage will allow you to save any IplImage or cvMat as a bmp image back onto your desktop. This is useful for actually seeing what the function are doing to the image. In fact, I would say that this is a vital step. Research a bit how the function is implemented and then&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cvSaveImage(&amp;quot;C:/Users/EE113D/Desktop/edged.bmp&amp;quot;, gray);
+//gray is just the name of the IplImage I wanted to save
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;You can&amp;rsquo;t use printf in Facedetect Video Processing&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;printf is too slow and messes up the interrupts in video processing&lt;/em&gt;&lt;br /&gt;
+Another advantage of the doing images is that you can actually do printf to the console that is convenently located in CCS. If you try to do it with the video processing, your program will break. Feel free to try it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;IplImage and CvMat&lt;/strong&gt;&lt;br /&gt;
+They can both be used as images. IplImage if you google is just a wrapper to hold an image. cvMat will be more basic. You may use either, but stick to one. Refer to the manual for information.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Useful Image Filters&lt;/strong&gt;&lt;br /&gt;
+You will want to use grayscale, edge, and smooth filters if you are doing any sort of image processing. Below are details on how to use them.&lt;/p&gt;
+
+&lt;p&gt;TODO&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speeding up cvLoad&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;Overall&lt;/em&gt;&lt;br /&gt;
+* cvLoad takes too long to load images.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Use Python Script to turn bmp images into C byte array fast.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add this to the project.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Details&lt;/em&gt;&lt;br /&gt;
+You will notice that cvLoad takes a boatload of time to load images. For our project I had about 100x100 pixels and it would still take a couple of minutes. When you want to do real processing this is not going to be practical on real images. Kevin Balke wrote an awesome script that basically parses file into a C language static byte array. Supposedly the cvLoad does the same thing when it is loading bmp files. So instead of waiting for the program to locate the file on your local computer and slowly reading it in, we can use the python script to do this conversion for us first. Note that I personally did not have enough time to implement this into my project, so you may have to work out the smaller bugs yourself.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Detailed Steps&lt;/em&gt; provided by Kevin Balke&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Download python 2.7 from python.org and install&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add &lt;a href=&#34;http://huntma.github.io/file/filetoc.py&#34;&gt;filetoc.py&lt;/a&gt; to project&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add image file to project&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Under Project Properties -&amp;gt; Build -&amp;gt; Steps -&amp;gt; Pre-build steps:
+Enter into Command:&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;@C:\Python27\python ${PWD}..\filetoc.py -f ${PWD}..\image.bmp -o ${PWD}..\image -n image&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Replace bmp.h with modified copy to add imread_const&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;Notes on step 6&lt;/em&gt;&lt;br /&gt;
+If you are using IplImage, it is a wrapper around the actual data of the image. What you should do is declare your own image and then manually populate the values that it requires. This is where your C skills come in. You will find that somewhere in the IplImage struct, there is a place for the data of the image. Save the results of filetoc.py as a variable and populate you IplImage with that.&lt;/p&gt;
+
+&lt;p&gt;As I recall Kevin did recommend PILLOW, an active fork of PIL (Python Imaging Library) that you may need. Again, as I didn&amp;rsquo;t actually implement this step, I am just trying to prepare you for possible tools you will need.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>post0</title>
+      <link>http://huntma.github.io/post/post0/</link>
+      <pubDate>Mon, 03 Apr 2017 01:26:13 -0700</pubDate>
+      
+      <guid>http://huntma.github.io/post/post0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>post9</title>
+      <link>http://huntma.github.io/post/post9/</link>
+      <pubDate>Mon, 03 Apr 2017 01:26:10 -0700</pubDate>
+      
+      <guid>http://huntma.github.io/post/post9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>post8</title>
+      <link>http://huntma.github.io/post/post8/</link>
+      <pubDate>Mon, 03 Apr 2017 01:26:08 -0700</pubDate>
+      
+      <guid>http://huntma.github.io/post/post8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>post7</title>
+      <link>http://huntma.github.io/post/post7/</link>
+      <pubDate>Mon, 03 Apr 2017 01:26:04 -0700</pubDate>
+      
+      <guid>http://huntma.github.io/post/post7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>post6</title>
+      <link>http://huntma.github.io/post/post6/</link>
+      <pubDate>Mon, 03 Apr 2017 01:26:01 -0700</pubDate>
+      
+      <guid>http://huntma.github.io/post/post6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>post5</title>
+      <link>http://huntma.github.io/post/post5/</link>
+      <pubDate>Mon, 03 Apr 2017 01:25:59 -0700</pubDate>
+      
+      <guid>http://huntma.github.io/post/post5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>post4</title>
+      <link>http://huntma.github.io/post/post4/</link>
+      <pubDate>Mon, 03 Apr 2017 01:25:57 -0700</pubDate>
+      
+      <guid>http://huntma.github.io/post/post4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>post3</title>
+      <link>http://huntma.github.io/post/post3/</link>
+      <pubDate>Mon, 03 Apr 2017 01:25:55 -0700</pubDate>
+      
+      <guid>http://huntma.github.io/post/post3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>post2</title>
+      <link>http://huntma.github.io/post/post2/</link>
+      <pubDate>Mon, 03 Apr 2017 01:25:53 -0700</pubDate>
+      
+      <guid>http://huntma.github.io/post/post2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>post1</title>
+      <link>http://huntma.github.io/post/post1/</link>
+      <pubDate>Mon, 03 Apr 2017 01:25:51 -0700</pubDate>
+      
+      <guid>http://huntma.github.io/post/post1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
