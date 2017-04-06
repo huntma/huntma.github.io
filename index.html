@@ -1,363 +1,101 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
-<head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.19" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<meta name="generator" content="Hugo 0.19" />
 
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+			
+		<title>Hunt Ma</title>
+		
 
-  
-  <title>Hunt Ma</title>
-  
+		<link href="https://huntma.github.io//css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://huntma.github.io//css/hunt.css" rel="stylesheet">
+	</head>
 
-  
-  <link rel="stylesheet" href="http://huntma.github.iocss/poole.css">
-  <link rel="stylesheet" href="http://huntma.github.iocss/syntax.css">
-  <link rel="stylesheet" href="http://huntma.github.iocss/hyde.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+<body>
 
-  
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/favicon.png">
+<nav class="navbar navbar-inverse navbar-static-top"> 
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-example-1" aria-expanded="false">
+				<span class="sr-only">Toggle nav</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">Hunt Ma</a>
+		</div>
+		<div class="collapse navbar-collapse" id="nav-example-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href='/about'>About</a><li>
+				
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>	
+					<ul class="dropdown-menu">
+						<li><a href="#">Robotics</a></li>
+						<li><a href="#">Coding</a></li>
+						<li><a href="#">Photography</a></li>
+					</ul>
+				</li>
+				<li><a href='/post'>Posts</a><li>
+				<li><a href='/file/170221resume.pdf'>Resume</a><li>
+			</ul>
+		</div>
+	</div>
+</nav>
 
-  
-  <link href="http://huntma.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Hunt Ma" />
-</head>
 
-<body class=" ">
 
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <a href="http://huntma.github.io"><h1>Hunt Ma</h1></a>
-      <p class="lead">
-	  Helloooo. This site is for learning. Complete, accurate, to-the-point information.
-      </p>
-    </div>
+<div class="container">
 
-    <ul class="sidebar-nav">
-      <li><a href="/">Home</a> </li>
-      <li><a href="/about">About</a> </li>
-      <li><a href="/post">Posts</a> </li>
-
-    </ul>
-
-    <p>&copy; 2017. All rights reserved. </p>
-  </div>
+<div class="jumbotron background">
+	<div class="container">
+		<h1>Welcome to hunt.</h1>
+		<p>This is a hugo theme that uses bootstrap and is well commented.</p>
+		<br>
+		<p><a class="btn btn-primary btn-lg" href="#" role="button">Button!</a></p>
+	</div>
 </div>
 
-
-<div class="content container">
-<div class="posts">
-	<h1 class="post-title">Where am I?</h1>
-	Hello my name is Hunt Ma. I study EE at Ucla. Here I share tutorials about stuff I do. I focus on accuracy, completeness, and being to-the-point. That means you will learn stuff you want faster.
-	
-	Look, I work with some of the best content. This is good content. Other websites with bad content? Sad. :)
-
-</div>
-
-<div class="posts">
-	
-		<div class="post">
-			<h1 class="post-title">
-			<a href="http://huntma.github.io/post/LCDK/">
-			Trials and Tribulations Using Facedetect on Texas Instrument LCDK OMAP-L138
+<div class="container front-page">
+	<div class="row">
+		<div class="col-md-4">
+			<a href="/about">
+			<div class="clickable">
+			<span class="glyphicon glyphicon-cloud glyphicon-large" aria-hidden="true"></span>
+			<h3>About</h3>
+			<p>In summary, it's about learning efficiently.</p>
+			</div>
 			</a>
-			</h1>
-			
-			<span class="post-date">Wednesday April 5, 2017</span>
-
-			
-
-<h2 id="a-digital-signal-processing-project">A Digital Signal Processing Project</h2>
-
-<h3 id="how-to-use-this-post">How to Use This Post</h3>
-
-<p>There is a lot of content. I recommend skimming the document to get an idea of what might be useful as pertains to your project.</p>
-
-<h3 id="note">Note</h3>
-
-<p>This document references OpenCV 1.x. Here is the <a href="/file/cv1x.pdf">reference manual</a>. As of writing, it is an old version, but we used it because TI StarterWare&rsquo;s Facedetect demo uses this. It will require more advanced knowledge to try and use a newer verson of OpenCV as this involves compiling from source to the ARM processor in your LCDK. More at the end of the guid</p>
-
-<p><strong>Don&rsquo;t be afraid of the complexity of the demo</strong><br />
-The code is complicated, but you don&rsquo;t have to know every part in order to do the project well. It is too easy to get sucked into the void of trying to understand everything. Use the reference manual that comes with the class. You are only going to be interested in certain interrupts and tasks because that is where the magic happens. The document explains it decent, but here is my take to give you a little more. Anything with Setup in the name you can ignore.</p>
-
-<ul>
-<li>main() is just setup for the program, you won&rsquo;t need to mess with it.</li>
-<li>facedetectTask is where the detection actually happens.</li>
-<li>LCDIsr is the interrupt service routine to draw to the output. Edit this to have different outputs.</li>
-</ul>
-
-<p><strong>Yes it takes a long time to build and run</strong><br />
-<em>The only thing you can do is be efficient with your time</em><br />
-One thing I noticed with the LCDK CCS setup is that every time you make a change to the code and want to test it out, you will have to wait at least a couple of minutes. This is extremely frustrating when you are trying to work fast, but it is a limitation that we can&rsquo;t avoid without a lot of research. What I did to max</p>
-
-<p><strong>Detect Circles</strong><br />
-<em>One line of code will allow you to detect circles instead.</em><br />
-So you&rsquo;ve got it working. Now let us change it to detect circles and give you a taste that changing the code is not as hard as it seems. Go to facedetectTask and comment out the Haar detection line. We will replace it with an included function in OpenCV.</p>
-
-<pre><code>/* Apply OpenCV haardetect algorithm */
-//dsp_sequence = cvHaarDetectObjects(image, cascade, storage, 2.5, 2, 0,cvSize(30, 30));
-
-/* Apply OpenCV Hough Circles algorithm */  
-dsp_sequence = cvHoughCircles(image, storage, CV_HOUGH_GRADIENT, 2, image-&gt;width/6, 100, 50, 0, 0);
-</code></pre>
-
-<p>cvHoughCircles uses a transform on the image to detect circles. There are multiple parameters to the function which you can change. Try the ones I have here to start and reference the manual to play with it yourself. Note that the program will crash if it detects too many circles at once. We also have to draw the circles to the output. Remember that this involves editing LCDIsr. My code is below. Thanks to Aditya Kotte who pioneered this.</p>
-
-<pre><code>c = (float *) cvGetSeqElem(dsp_sequence2, i);
-CvPoint pt = cvPoint(cvRound(c[0]), cvRound(c[1]));
-int radius = cvRound(c[2]);
-cvCircle(image1, pt, radius, blue, 2, 8, 0);
-</code></pre>
-
-<p><strong>Using custom HaarClassifier Cascades</strong><br />
-<em>Loading your own HaarClassifier is very difficult</em><br />
-You will not be able to cvLoad a new HaarClassifierCascade.xml easily. I ran into very cryptic errors when trying to do this that would require a very deep understanding of the LCDK OMAPL138 to fix.</p>
-
-<p>The facedetect uses HaarClassifier Cascades to do their facedetect. This is stored in a variable called buffer as an array of ints. Somehow they converted the .xml file into data that would go into memory and hardcoded it.</p>
-
-<p><strong>Trying to Use Newer OpenCV</strong>
-<em>Research ARM-EABI cross compile OpenCV</em>
-This will point you in the right direction. If you are not a computer science major, you may not understand what this means. That&rsquo;s okay, I didn&rsquo;t either, we are here to learn. Here&rsquo;s the lowdown to get you started on how to learn it. Two major instruction sets are x86 and ARM. When we write programs in any code, they are compiled so that they become machine instructions that the CPU can read them. We have the source for OpenCV on the internet, easily accessible. The LCDK uses an ARM chip. It is embedded, so there is no operating system on the LCDK (well technically there is a BIOS, which I&rsquo;m actually not sure how that will affect). But we want EABI (Embedded Application Binary Interface - ABI&rsquo;s are a whole other topic). If there was an operating system, there would be a need to compile for the different operating systems as well (Linux, Windows, MacOS being the major ones). Each operating system has different requirements for executables, and you also knew the hardware does too. Confusing I know. If you actually complete this please contact me! I would love to know. Then cross compiling is just the term we use when we want to compile a program for different platforms.</p>
-
-<p><strong>Where to Put Your Project File</strong><br />
-<em>Having the working project file in your flashdrive will ensure nothing gets changed.</em><br />
-Save your CCS project on your flashdrive. This will prevent the host computer changes in between your sessions to affect your project. Your project will still reference library files located on the computer.</p>
-
-<p>You might get some error with missing GEL files or missing dependencies. This is okay. The GUI for CCS is nice enough that you can click through it and it will let you find your file. When you installed the Starterware, it should have downloaded other dependencies in the Program Files -&gt; Texas Instruments (or ti) folder. One of them is <strong>pdk_C6748_2_0_0_0</strong>. The error in CCS should tell you. Actually what I did is I just copied the dependencies needed into the same project folder on my flash so that it would contain the full set of files needed.</p>
-
-<p><strong>Manipulating CvSequence</strong><br />
-<em>Understand that sequences are linked lists</em><br />
-This is a confusing structure because some of OpenCV&rsquo;s structs are made from sequences, but you can also use a sequence to hold things. How it relates to you is that if you are using findContours, then a sequence of contours is returned. Then also note that contours are sequence of points. Here is a quick example of how to access the points in the sequence</p>
-
-<pre><code>for(current=dsp_sequence; current != NULL; current=current-&gt;h_next) {
-	for(j=0; j &lt; current-&gt;total; j++) {
-		CvPoint* pt = (CvPoint*)cvGetSeqElem(dsp_sequence,j);
-		printf(&quot;   hello the (x,y) is : (%d, %d)\n&quot;,pt-&gt;x,pt-&gt;y);
-</code></pre>
-
-<p>The outer loop traverses the sequence of contours(which are also cvSequences). The inner loop will traverse the points of that contour. Notice that I use a typcast to CvPpoint when I use cvGetSeqElem and store it in a temporary CvPoint. This typcast is needed. You can refer to the manual for more info. Which leads into the next tip.</p>
-
-<p>Note that OpenCV defines many objects themselves. Look at the manual to see. There are cvPoints, cvFonts, and more.</p>
-
-<p><strong>Refer to source code</strong><br />
-<em>The manual is not 100% accurate, so you will need your C knowledge to infer</em><br />
-When the manual is wrong. Right-click and use open function declaration in order to inspect the source code. This is a neat tool provided by CCS that will automatically open the file and display the function. This is most useful when figuring out what arguments to pass into the function.</p>
-
-<p><strong>Doing Image Processing</strong><br />
-<em>An easier project is to do image processing, but you will need to make changes</em><br />
-You will need to include highgui.lib if you want to load and save images. For some reason this library was not built into the facedetect demo. Thhe reasoning is probably because facedetect doesn&rsquo;t use any of the functions from it. Andrew Ho has built a highgui.lib from source that you can just include in your project. Do it by placing the file in your /bin folder of the project folder and then going to project properties going to C6000 linker. Then actually include it in your main c file with</p>
-
-<pre><code>#include &quot;highgui.h&quot;
-</code></pre>
-
-<p>You may also need the highgui.h header file from the source code. But you can get that from SourceForge. Here is the file for the <a href="/file/highgui.lib">highgui.lib</a> file.</p>
-
-<p><img src="/image/highgui.PNG" alt="highgui.lib bin folder placement" /><br />
-<em>Image: Shows where exactly to put the lib file in your project folder.</em></p>
-
-<p><strong>Loading and Saving Images</strong><br />
-<em>Use cvLoadImage and cvSaveImage.</em><br />
-cvLoadImage will allow you to load bmp images. If you are doing it in Paint, save them as 256-bit images. Note that this does take a long time for any appreciably sized images. Just note to use the correct path. Debugging which path to use took me a couple of hours.</p>
-
-<pre><code>const char* source = &quot;C:/Users/EE113D/Desktop/template.bmp&quot;;
-IplImage * image = cvLoadImage(source, CV_LOAD_IMAGE_COLOR);
-//the second parameter to the function in all CAPS is just to let the program know the file is a 256-bit color image. You will need that
-</code></pre>
-
-<p>cvSaveImage will allow you to save any IplImage or cvMat as a bmp image back onto your desktop. This is useful for actually seeing what the function are doing to the image. In fact, I would say that this is a vital step. Research a bit how the function is implemented and then</p>
-
-<pre><code>cvSaveImage(&quot;C:/Users/EE113D/Desktop/edged.bmp&quot;, gray);
-//gray is just the name of the IplImage I wanted to save
-</code></pre>
-
-<p><strong>You can&rsquo;t use printf in Facedetect Video Processing</strong><br />
-<em>printf is too slow and messes up the interrupts in video processing</em><br />
-Another advantage of the doing images is that you can actually do printf to the console that is convenently located in CCS. If you try to do it with the video processing, your program will break. Feel free to try it.</p>
-
-<p><strong>IplImage and CvMat</strong><br />
-They can both be used as images. IplImage if you google is just a wrapper to hold an image. cvMat will be more basic. You may use either, but stick to one. Refer to the manual for information.</p>
-
-<p><strong>Useful Image Filters</strong><br />
-You will want to use grayscale, edge, and smooth filters if you are doing any sort of image processing. Below are details on how to use them.</p>
-
-<p>TODO</p>
-
-<p><strong>Speeding up cvLoad</strong><br />
-<em>Overall</em><br />
-* cvLoad takes too long to load images.</p>
-
-<ul>
-<li><p>Use Python Script to turn bmp images into C byte array fast.</p></li>
-
-<li><p>Add this to the project.</p></li>
-</ul>
-
-<p><em>Details</em><br />
-You will notice that cvLoad takes a boatload of time to load images. For our project I had about 100x100 pixels and it would still take a couple of minutes. When you want to do real processing this is not going to be practical on real images. Kevin Balke wrote an awesome script that basically parses file into a C language static byte array. Supposedly the cvLoad does the same thing when it is loading bmp files. So instead of waiting for the program to locate the file on your local computer and slowly reading it in, we can use the python script to do this conversion for us first. Note that I personally did not have enough time to implement this into my project, so you may have to work out the smaller bugs yourself.</p>
-
-<p><em>Detailed Steps</em> provided by Kevin Balke</p>
-
-<ol>
-<li><p>Download python 2.7 from python.org and install</p></li>
-
-<li><p>Add <a href="/file/filetoc.py">filetoc.py</a> to project</p></li>
-
-<li><p>Add image file to project</p></li>
-
-<li><p>Under Project Properties -&gt; Build -&gt; Steps -&gt; Pre-build steps:
-Enter into Command:</p></li>
-
-<li><p>@C:\Python27\python ${PWD}..\filetoc.py -f ${PWD}..\image.bmp -o ${PWD}..\image -n image</p></li>
-
-<li><p>Replace bmp.h with modified copy to add imread_const</p></li>
-</ol>
-
-<p><em>Notes on step 6</em><br />
-If you are using IplImage, it is a wrapper around the actual data of the image. What you should do is declare your own image and then manually populate the values that it requires. This is where your C skills come in. You will find that somewhere in the IplImage struct, there is a place for the data of the image. Save the results of filetoc.py as a variable and populate you IplImage with that.</p>
-
-<p>As I recall Kevin did recommend PILLOW, an active fork of PIL (Python Imaging Library) that you may need. Again, as I didn&rsquo;t actually implement this step, I am just trying to prepare you for possible tools you will need.</p>
-
 		</div>
-	
-		<div class="post">
-			<h1 class="post-title">
-			<a href="http://huntma.github.io/about/note/">
-			note
+		<div class="col-md-4">
+		  <a href="/post/">
+			<div class="clickable">
+			<span class="glyphicon glyphicon-pencil glyphicon-large" aria-hidden="true"></span>
+			<h3>Posts</h3>
+			<p>Posts about any topic.</p>
+			</div>
 			</a>
-			</h1>
-			
-			<span class="post-date">Wednesday April 5, 2017</span>
-
-			<p>Don&rsquo;t need anything here. This whole section is just so the content list for the&rdquo;about type&rdquo; will render.</p>
-
 		</div>
-	
-		<div class="post">
-			<h1 class="post-title">
-			<a href="http://huntma.github.io/post/post0/">
-			post0
+		</a>
+		<div class="col-md-4">
+			<a href="#">
+			<div class="clickable">
+			<span class="glyphicon glyphicon-plus glyphicon-large" aria-hidden="true"></span>
+			<h3>Projects</h3>
+			<p>Check out my projects.</p>
+			</div>
 			</a>
-			</h1>
-			
-			<span class="post-date">Monday April 3, 2017</span>
-
-			
 		</div>
-	
-		<div class="post">
-			<h1 class="post-title">
-			<a href="http://huntma.github.io/post/post9/">
-			post9
-			</a>
-			</h1>
-			
-			<span class="post-date">Monday April 3, 2017</span>
-
-			
-		</div>
-	
-		<div class="post">
-			<h1 class="post-title">
-			<a href="http://huntma.github.io/post/post8/">
-			post8
-			</a>
-			</h1>
-			
-			<span class="post-date">Monday April 3, 2017</span>
-
-			
-		</div>
-	
-		<div class="post">
-			<h1 class="post-title">
-			<a href="http://huntma.github.io/post/post7/">
-			post7
-			</a>
-			</h1>
-			
-			<span class="post-date">Monday April 3, 2017</span>
-
-			
-		</div>
-	
-		<div class="post">
-			<h1 class="post-title">
-			<a href="http://huntma.github.io/post/post6/">
-			post6
-			</a>
-			</h1>
-			
-			<span class="post-date">Monday April 3, 2017</span>
-
-			
-		</div>
-	
-		<div class="post">
-			<h1 class="post-title">
-			<a href="http://huntma.github.io/post/post5/">
-			post5
-			</a>
-			</h1>
-			
-			<span class="post-date">Monday April 3, 2017</span>
-
-			
-		</div>
-	
-		<div class="post">
-			<h1 class="post-title">
-			<a href="http://huntma.github.io/post/post4/">
-			post4
-			</a>
-			</h1>
-			
-			<span class="post-date">Monday April 3, 2017</span>
-
-			
-		</div>
-	
-		<div class="post">
-			<h1 class="post-title">
-			<a href="http://huntma.github.io/post/post3/">
-			post3
-			</a>
-			</h1>
-			
-			<span class="post-date">Monday April 3, 2017</span>
-
-			
-		</div>
-	
-		<div class="post">
-			<h1 class="post-title">
-			<a href="http://huntma.github.io/post/post2/">
-			post2
-			</a>
-			</h1>
-			
-			<span class="post-date">Monday April 3, 2017</span>
-
-			
-		</div>
-	
-		<div class="post">
-			<h1 class="post-title">
-			<a href="http://huntma.github.io/post/post1/">
-			post1
-			</a>
-			</h1>
-			
-			<span class="post-date">Monday April 3, 2017</span>
-
-			
-		</div>
-	
+	</div>
 </div>
 </div>
-
 </body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://huntma.github.io//js/bootstrap.min.js"></script>
 </html>
+

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on Hunt Ma</title>
-    <link>http://huntma.github.io/about/index.xml</link>
+    <link>https://huntma.github.io/about/index.xml</link>
     <description>Recent content in Abouts on Hunt Ma</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 05 Apr 2017 00:05:12 -0700</lastBuildDate>
-    <atom:link href="http://huntma.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huntma.github.io/about/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>note</title>
-      <link>http://huntma.github.io/about/note/</link>
+      <link>https://huntma.github.io/about/note/</link>
       <pubDate>Wed, 05 Apr 2017 00:05:12 -0700</pubDate>
       
-      <guid>http://huntma.github.io/about/note/</guid>
+      <guid>https://huntma.github.io/about/note/</guid>
       <description>&lt;p&gt;Don&amp;rsquo;t need anything here. This whole section is just so the content list for the&amp;rdquo;about type&amp;rdquo; will render.&lt;/p&gt;
 </description>
     </item>

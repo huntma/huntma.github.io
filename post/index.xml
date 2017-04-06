@@ -2,19 +2,164 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Hunt Ma</title>
-    <link>http://huntma.github.io/post/index.xml</link>
+    <link>https://huntma.github.io/post/index.xml</link>
     <description>Recent content in Posts on Hunt Ma</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Apr 2017 22:16:26 -0700</lastBuildDate>
-    <atom:link href="http://huntma.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Apr 2017 15:46:31 -0700</lastBuildDate>
+    <atom:link href="https://huntma.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Webeasy</title>
+      <link>https://huntma.github.io/post/webeasy/</link>
+      <pubDate>Tue, 18 Apr 2017 15:46:31 -0700</pubDate>
+      
+      <guid>https://huntma.github.io/post/webeasy/</guid>
+      <description>
+
+&lt;h1 id=&#34;tutorial-for-a-personal-website&#34;&gt;Tutorial for a Personal Website&lt;/h1&gt;
+
+&lt;h3 id=&#34;for-absolute-beginners&#34;&gt;&lt;em&gt;For Absolute Beginners&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;why-a-website&#34;&gt;Why a Website&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Your website is your internet ID. Put as much or as little info as you want.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;It is an official place to showcase your work.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;It is a way to get an edge in job hunts, and also really show off your cool projects.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;okay let&amp;rsquo;s get to it&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;set-up-a-new-site&#34;&gt;Set up a new site&lt;/h3&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;img src=&#34;https://huntma.github.io/image/002github1.PNG&#34; alt=&#34;Github sign up&#34; /&gt;
+Quite simple.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://huntma.github.io/image/002github2.PNG&#34; alt=&#34;Github 2&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can skip the 3rd step of tailoring your experience
+Make a professional username. Please. No kittenSlayer44 or anything like that.&lt;/p&gt;
+
+&lt;p&gt;Our website will be a project on Github. Project name is &amp;ldquo;[your username].github.io&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;When do I do the magic to upload my site on the web?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Github contains a program called Github Pages that automatically creates your websitefrom that project you just created. They made it so that it MUST have that name though. Pics below.&lt;/p&gt;
+
+&lt;p&gt;{{ &amp;lt; figure src= &amp;ldquo;/image/170418_repo.PNG&amp;rdquo; &amp;gt;}}
+Navigate here to start a new repo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://huntma.github.io/image/170418_repo1.PNG&#34; alt=&#34;Repo1&#34; /&gt;
+Type into this field &amp;ldquo;[your username].github.io&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://huntma.github.io/image/170418_repo2.PNG&#34; alt=&#34;Repo2&#34; /&gt;
+TODO: change default size of images
+You will see this. Click Readme. Write anything. This is the first file in your project.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;More info&lt;/em&gt;&lt;br /&gt;
+&amp;gt; A README is a text file has information about the software that the creator thought that users should know before using. Like a user manual.&lt;/p&gt;
+
+&lt;p&gt;Create new file and name it &amp;ldquo;index.html&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;More info&lt;/em&gt;
+&amp;gt; index.html is a weird name. Why? Because when the browser is looking for html files to generate the page, it is in the standard to look for this specific name.&lt;/p&gt;
+
+&lt;h3 id=&#34;overview-of-the-web&#34;&gt;Overview of the Web&lt;/h3&gt;
+
+&lt;p&gt;Any monkey can learn to make a website. It won&amp;rsquo;t understand how it all works though. We are not monkeys.&lt;/p&gt;
+
+&lt;p&gt;All website live somewhere. It will be on a computer that is connected to the internet.&lt;/p&gt;
+
+&lt;p&gt;That computer has a program that can serve the site to people who request it. Hence servers.&lt;/p&gt;
+
+&lt;p&gt;Each of these computers has an address, like every house has an address. A domain name is the nickname for it. For example &amp;ldquo;google.com&amp;rdquo; instead of &amp;ldquo;8.8.8.8&amp;rdquo;. Continuing the analogy, that&amp;rsquo;s like calling your house &amp;ldquo;home&amp;rdquo; instead of 330 De Neve Dr. Los Angeles, CA 90024.&lt;/p&gt;
+
+&lt;p&gt;For us today, our website is going to live on Github&amp;rsquo;s servers.
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;html-css&#34;&gt;HTML &amp;amp; CSS&lt;/h3&gt;
+
+&lt;p&gt;Hyper Text - Meaning words can be hyperlinks
+Markup Language - A language to mark things up or annotate.&lt;/p&gt;
+
+&lt;p&gt;Cascaded Style Sheets - the syle of the content&lt;/p&gt;
+
+&lt;p&gt;Imagine you have a rich electronic document with images, colors, cool fonts, and an amazing layout. Wow, a graphic designer probably made this. How would you represent it electronically though?&lt;/p&gt;
+
+&lt;p&gt;We could use a PDF or a Word document. Sure. But the web uses HTML and CSS which are lighter (in file size).&lt;/p&gt;
+
+&lt;p&gt;Start with plain text. We now have the same words as on our doc.&lt;/p&gt;
+
+&lt;p&gt;Our doc has very diverse content though. It has a header, title, images, and different sections. Use HTML (which uses tags like &lt;p&gt;blah&lt;/p&gt;) to mark sections of plain text.&lt;/p&gt;
+
+&lt;p&gt;We have now told the software (chrome, firefox, ie) what kind of words we have. Use CSS to tell it how to display these words. Color, font, placement, size, etc.
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;brick-by-brick&#34;&gt;Brick by Brick.&lt;/h3&gt;
+
+&lt;p&gt;We will build one piece of our website at a time.&lt;/p&gt;
+
+&lt;p&gt;Copy this template&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Fill in Information.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;???&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Profit&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;edits-you-can-do&#34;&gt;Edits You Can Do&lt;/h3&gt;
+
+&lt;h3 id=&#34;continue-to-evolve&#34;&gt;Continue to Evolve!&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;You can extend your website into a blog.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Look into using a Static Site Generator. This site is made using Hugo. There are some pretty good tutorials out there, but to be honest I needed to use multiple ones to really learn how to do it. There&amp;rsquo;s no single, super-complete one out there.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Buy your own domain name and attach it to your website.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;More Info:&lt;br /&gt;
+All websites need to live somewhere. Ours lives on the Github servers which are actual computers sitting somewheres wired up to the internet. This website just needs an easy name to remember instead of a complicated IP address like 198.162.0.0. This assigning of names to IP addresses is handled by big organizations called Domain Name Registrars.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Learn about Github&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Google git tutorial and do it. Git is a fast, lightweight program designed to keep a history of your projects on computers. This is a type of &lt;em&gt;version control&lt;/em&gt; system. Github is just a website built using this tool to give you a clickable interface and providing online servers to store your projects.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;HTML and CSS&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>Trials and Tribulations Using Facedetect on Texas Instrument LCDK OMAP-L138</title>
-      <link>http://huntma.github.io/post/LCDK/</link>
+      <link>https://huntma.github.io/post/LCDK/</link>
       <pubDate>Wed, 05 Apr 2017 22:16:26 -0700</pubDate>
       
-      <guid>http://huntma.github.io/post/LCDK/</guid>
+      <guid>https://huntma.github.io/post/LCDK/</guid>
       <description>
 
 &lt;h2 id=&#34;a-digital-signal-processing-project&#34;&gt;A Digital Signal Processing Project&lt;/h2&gt;
@@ -25,7 +170,7 @@
 
 &lt;h3 id=&#34;note&#34;&gt;Note&lt;/h3&gt;
 
-&lt;p&gt;This document references OpenCV 1.x. Here is the &lt;a href=&#34;http://huntma.github.io/file/cv1x.pdf&#34;&gt;reference manual&lt;/a&gt;. As of writing, it is an old version, but we used it because TI StarterWare&amp;rsquo;s Facedetect demo uses this. It will require more advanced knowledge to try and use a newer verson of OpenCV as this involves compiling from source to the ARM processor in your LCDK. More at the end of the guid&lt;/p&gt;
+&lt;p&gt;This document references OpenCV 1.x. Here is the &lt;a href=&#34;https://huntma.github.io/file/cv1x.pdf&#34;&gt;reference manual&lt;/a&gt;. As of writing, it is an old version, but we used it because TI StarterWare&amp;rsquo;s Facedetect demo uses this. It will require more advanced knowledge to try and use a newer verson of OpenCV as this involves compiling from source to the ARM processor in your LCDK. More at the end of the guid&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t be afraid of the complexity of the demo&lt;/strong&gt;&lt;br /&gt;
 The code is complicated, but you don&amp;rsquo;t have to know every part in order to do the project well. It is too easy to get sucked into the void of trying to understand everything. Use the reference manual that comes with the class. You are only going to be interested in certain interrupts and tasks because that is where the magic happens. The document explains it decent, but here is my take to give you a little more. Anything with Setup in the name you can ignore.&lt;/p&gt;
@@ -100,9 +245,9 @@ You will need to include highgui.lib if you want to load and save images. For so
 &lt;pre&gt;&lt;code&gt;#include &amp;quot;highgui.h&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;You may also need the highgui.h header file from the source code. But you can get that from SourceForge. Here is the file for the &lt;a href=&#34;http://huntma.github.io/file/highgui.lib&#34;&gt;highgui.lib&lt;/a&gt; file.&lt;/p&gt;
+&lt;p&gt;You may also need the highgui.h header file from the source code. But you can get that from SourceForge. Here is the file for the &lt;a href=&#34;https://huntma.github.io/file/highgui.lib&#34;&gt;highgui.lib&lt;/a&gt; file.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://huntma.github.io/image/highgui.PNG&#34; alt=&#34;highgui.lib bin folder placement&#34; /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;img src=&#34;https://huntma.github.io/image/highgui.PNG&#34; alt=&#34;highgui.lib bin folder placement&#34; /&gt;&lt;br /&gt;
 &lt;em&gt;Image: Shows where exactly to put the lib file in your project folder.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Loading and Saving Images&lt;/strong&gt;&lt;br /&gt;
@@ -150,7 +295,7 @@ You will notice that cvLoad takes a boatload of time to load images. For our pro
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Download python 2.7 from python.org and install&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Add &lt;a href=&#34;http://huntma.github.io/file/filetoc.py&#34;&gt;filetoc.py&lt;/a&gt; to project&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Add &lt;a href=&#34;https://huntma.github.io/file/filetoc.py&#34;&gt;filetoc.py&lt;/a&gt; to project&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Add image file to project&lt;/p&gt;&lt;/li&gt;
 
@@ -171,91 +316,91 @@ If you are using IplImage, it is a wrapper around the actual data of the image. 
     
     <item>
       <title>post0</title>
-      <link>http://huntma.github.io/post/post0/</link>
+      <link>https://huntma.github.io/post/post0/</link>
       <pubDate>Mon, 03 Apr 2017 01:26:13 -0700</pubDate>
       
-      <guid>http://huntma.github.io/post/post0/</guid>
+      <guid>https://huntma.github.io/post/post0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>post9</title>
-      <link>http://huntma.github.io/post/post9/</link>
+      <link>https://huntma.github.io/post/post9/</link>
       <pubDate>Mon, 03 Apr 2017 01:26:10 -0700</pubDate>
       
-      <guid>http://huntma.github.io/post/post9/</guid>
+      <guid>https://huntma.github.io/post/post9/</guid>
       <description></description>
     </item>
     
     <item>
       <title>post8</title>
-      <link>http://huntma.github.io/post/post8/</link>
+      <link>https://huntma.github.io/post/post8/</link>
       <pubDate>Mon, 03 Apr 2017 01:26:08 -0700</pubDate>
       
-      <guid>http://huntma.github.io/post/post8/</guid>
+      <guid>https://huntma.github.io/post/post8/</guid>
       <description></description>
     </item>
     
     <item>
       <title>post7</title>
-      <link>http://huntma.github.io/post/post7/</link>
+      <link>https://huntma.github.io/post/post7/</link>
       <pubDate>Mon, 03 Apr 2017 01:26:04 -0700</pubDate>
       
-      <guid>http://huntma.github.io/post/post7/</guid>
+      <guid>https://huntma.github.io/post/post7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>post6</title>
-      <link>http://huntma.github.io/post/post6/</link>
+      <link>https://huntma.github.io/post/post6/</link>
       <pubDate>Mon, 03 Apr 2017 01:26:01 -0700</pubDate>
       
-      <guid>http://huntma.github.io/post/post6/</guid>
+      <guid>https://huntma.github.io/post/post6/</guid>
       <description></description>
     </item>
     
     <item>
       <title>post5</title>
-      <link>http://huntma.github.io/post/post5/</link>
+      <link>https://huntma.github.io/post/post5/</link>
       <pubDate>Mon, 03 Apr 2017 01:25:59 -0700</pubDate>
       
-      <guid>http://huntma.github.io/post/post5/</guid>
+      <guid>https://huntma.github.io/post/post5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>post4</title>
-      <link>http://huntma.github.io/post/post4/</link>
+      <link>https://huntma.github.io/post/post4/</link>
       <pubDate>Mon, 03 Apr 2017 01:25:57 -0700</pubDate>
       
-      <guid>http://huntma.github.io/post/post4/</guid>
+      <guid>https://huntma.github.io/post/post4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>post3</title>
-      <link>http://huntma.github.io/post/post3/</link>
+      <link>https://huntma.github.io/post/post3/</link>
       <pubDate>Mon, 03 Apr 2017 01:25:55 -0700</pubDate>
       
-      <guid>http://huntma.github.io/post/post3/</guid>
+      <guid>https://huntma.github.io/post/post3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>post2</title>
-      <link>http://huntma.github.io/post/post2/</link>
+      <link>https://huntma.github.io/post/post2/</link>
       <pubDate>Mon, 03 Apr 2017 01:25:53 -0700</pubDate>
       
-      <guid>http://huntma.github.io/post/post2/</guid>
+      <guid>https://huntma.github.io/post/post2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>post1</title>
-      <link>http://huntma.github.io/post/post1/</link>
+      <link>https://huntma.github.io/post/post1/</link>
       <pubDate>Mon, 03 Apr 2017 01:25:51 -0700</pubDate>
       
-      <guid>http://huntma.github.io/post/post1/</guid>
+      <guid>https://huntma.github.io/post/post1/</guid>
       <description></description>
     </item>
     
