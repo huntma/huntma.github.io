@@ -10,8 +10,8 @@
 		
 		<title>Webeasy &middot; Hunt Ma</title> 
 
-		<link href="https://huntma.github.io//css/bootstrap.min.css" rel="stylesheet">
-		<link href="https://huntma.github.io//css/hunt.css" rel="stylesheet">
+		<link href="https://huntma.github.io/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://huntma.github.io/css/hunt.css" rel="stylesheet">
 	</head>
 
 
@@ -60,7 +60,9 @@
 
 <h3 id="for-absolute-beginners"><em>For Absolute Beginners</em></h3>
 
-<p><br>
+<p><br></p>
+
+<p>This tutorial is to get you a barebones, but acceptable personal website. It is meant as a starting off point. I expect you to journey on and learn more.
 <br>
 <br></p>
 
@@ -84,38 +86,35 @@
 
 <h3 id="set-up-a-new-site">Set up a new site</h3>
 
-<p><br>
-<img src="/image/002github1.PNG" alt="Github sign up" />
-Quite simple.</p>
+<p><br></p>
 
-<p><img src="/image/002github2.PNG" alt="Github 2" /></p>
+<p>Create a new Github account.</p>
 
-<p>You can skip the 3rd step of tailoring your experience
-Make a professional username. Please. No kittenSlayer44 or anything like that.</p>
+<p>Choose free version. We don&rsquo;t have any valuable things so we don&rsquo;t need private repos (repository is a place where things are stored).</p>
 
-<p>Our website will be a project on Github. Project name is &ldquo;[your username].github.io&rdquo;.</p>
+<p>Make a professional username. Please. No kittenSlayer44 or anything like that.</p>
 
-<p><em>When do I do the magic to upload my site on the web?</em></p>
+<p>Start a new repo/project. Top left plus sign.</p>
 
-<p>Github contains a program called Github Pages that automatically creates your websitefrom that project you just created. They made it so that it MUST have that name though. Pics below.</p>
+<p>Name it &ldquo;[your username].github.io&rdquo;.</p>
 
-<p>{{ &lt; figure src= &ldquo;/image/170418_repo.PNG&rdquo; &gt;}}
-Navigate here to start a new repo.</p>
+<p><em>When do I do the magic to upload my site on the web?</em><br />
+&gt; Github contains a program called Github Pages that automatically creates your websitefrom that project you just created. They made it so that it MUST have that name though. Pics below.</p>
 
-<p><img src="/image/170418_repo1.PNG" alt="Repo1" />
-Type into this field &ldquo;[your username].github.io&rdquo;</p>
+<p><em>What am I doing?</em><br />
+&gt; Github is an online repository. Is useful if you have multiple people working on a project.
+&gt; We now have an account on the Github servers, and our project is on it.</p>
 
 <p><img src="/image/170418_repo2.PNG" alt="Repo2" />
 TODO: change default size of images
-You will see this. Click Readme. Write anything. This is the first file in your project.</p>
+Since this is a new account, it asks to set up your first files and a local repo.<br />
+Click Readme. Write anything. This is the first file in your project.</p>
 
 <p><em>More info</em><br />
 &gt; A README is a text file has information about the software that the creator thought that users should know before using. Like a user manual.</p>
 
-<p>Create new file and name it &ldquo;index.html&rdquo;.</p>
-
 <p><em>More info</em>
-&gt; index.html is a weird name. Why? Because when the browser is looking for html files to generate the page, it is in the standard to look for this specific name.</p>
+&gt; index.html is a weird name. Why? Because when the browser is looking for html files to generate the page, the html standard says to look for this specific name.</p>
 
 <h3 id="overview-of-the-web">Overview of the Web</h3>
 
@@ -137,6 +136,9 @@ Markup Language - A language to mark things up or annotate.</p>
 
 <p>Cascaded Style Sheets - the syle of the content</p>
 
+<p><em>CSS</em><br />
+It is called cascaded because the order of them matters. Later ones will override previous ones which is useful for customizing. Say you use one of many premade CSS. Then you can change little things with just your own CSS. No need to go into their code.</p>
+
 <p>Imagine you have a rich electronic document with images, colors, cool fonts, and an amazing layout. Wow, a graphic designer probably made this. How would you represent it electronically though?</p>
 
 <p>We could use a PDF or a Word document. Sure. But the web uses HTML and CSS which are lighter (in file size).</p>
@@ -145,24 +147,160 @@ Markup Language - A language to mark things up or annotate.</p>
 
 <p>Our doc has very diverse content though. It has a header, title, images, and different sections. Use HTML (which uses tags like <p>blah</p>) to mark sections of plain text.</p>
 
-<p>We have now told the software (chrome, firefox, ie) what kind of words we have. Use CSS to tell it how to display these words. Color, font, placement, size, etc.
+<p>We have now told the software (chrome, firefox, ie) what kind of words we have. Use CSS to tell it how to display these words. Color, font, placement, size, etc.</p>
+
+<p><em>In Summary</em><br />
+HTML will hold your content. CSS will hold your style.
 <br></p>
 
-<h3 id="brick-by-brick">Brick by Brick.</h3>
+<h3 id="shortest-intro-to-html">Shortest intro to HTML.</h3>
 
-<p>We will build one piece of our website at a time.</p>
+<p><br></p>
+
+<p><strong>HTML element tags</strong><br />
+We mentioned these &ldquo;element&rdquo; tags. They look like this.</p>
+
+<pre><code>&lt;div&gt;
+HELLLOOOOO
+&lt;/div&gt;
+</code></pre>
+
+<p>Most common elements are:
+div - generic division
+h[#] - headers where h1 biggest and people use up to h6 usually
+p - paragraph
+a - link</p>
+
+<p><strong>attributes</strong><br />
+Any element can have attributes.</p>
+
+<pre><code>&lt;div class=&quot;big&quot;&gt;
+HELLLOOOO
+&lt;/div&gt;
+</code></pre>
+
+<p>So then in my CSS, I could say any element with big needs to fill the whole screen.
+Most common are class and id. Use class is multiple. ID is supposed to be for one thing.
+<br></p>
+
+<h3 id="short-intro-to-css">Short intro to CSS</h3>
+
+<p>CSS is to add style. It does this by referencing the elements and their attributes.
+It does this with selectors which look like</p>
+
+<pre><code>h1 {
+	color: red;
+}
+
+.big {
+	height: 100%;
+	width: 100%;
+}
+</code></pre>
+
+<p>First one makes all h1 headings red. Second one makes all elements in the class big fill up their container.</p>
+
+<p>Just know there are different selectors and ways to mix them to target specific parts of your html.</p>
+
+<h3 id="our-workflow">Our Workflow.</h3>
+
+<p>Github takes a couple minutes to update its websites.</p>
+
+<p>We want to see immediate results, so we develop locally.</p>
+
+<p>You can view your site on TODO: add site</p>
+
+<p>Change your site.</p>
+
+<p>Refresh the page.</p>
+
+<h3 id="basics">Basics.</h3>
+
+<p>We will build one piece of our website at a time. Create an &ldquo;index.html&rdquo;.</p>
 
 <p>Copy this template</p>
 
-<pre><code></code></pre>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;!-- This is a comment --&gt;
+&lt;/head&gt;
 
-<ol>
-<li><p>Fill in Information.</p></li>
+&lt;body&gt;
+	&lt;!-- content goes here --&gt;
+&lt;/body&gt;
 
-<li><p>???</p></li>
+&lt;/html&gt;
+</code></pre>
 
-<li><p>Profit</p></li>
-</ol>
+<p>This is a blank html document. You see the html tags that enclose the head and body. Head holds meta info that doesn&rsquo;t get displayed. Body holds the content.</p>
+
+<p><em>More info</em></p>
+
+<blockquote>
+<p>!DOCTYPE tells the software reading this that it is an html doc. The &lsquo;!&rsquo; is fairly common in scripts and web languages to say something is important.</p>
+</blockquote>
+
+<h3 id="get-bootstrap">Get Bootstrap</h3>
+
+<p>Bootstrap is CSS. The best feature is they  make your website display properly on different device sizes.</p>
+
+<p>Add this to head</p>
+
+<pre><code>&lt;head&gt;
+	&lt;meta charset=&quot;utf-8&quot;&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+
+	&lt;title&gt;Hunt Ma&lt;/title&gt;
+
+	&lt;link href=&quot;https://huntma.github.io//css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+	&lt;link href=&quot;https://huntma.github.io//css/hunt.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+
+<p>Change where it says my username to yours</p>
+
+<h3 id="navbar">Navbar</h3>
+
+<pre><code>```
+&lt;nav class=&quot;navbar navbar-inverse navbar-static-top&quot;&gt; 
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#nav-example-1&quot; aria-expanded=&quot;false&quot;&gt;
+            &lt;span class=&quot;sr-only&quot;&gt;Toggle nav&lt;/span&gt;
+            &lt;span class=&quot;gicon-bar&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Hunt Ma&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;nav-example-1&quot;&gt;
+        &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+            &lt;li&gt;&lt;a href='/about'&gt;About&lt;/a&gt;&lt;li&gt;
+
+            &lt;li class=&quot;dropdown&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Projects&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt; 
+                &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Robotics&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Coding&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Photography&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href='/post'&gt;Posts&lt;/a&gt;&lt;li&gt;
+            &lt;li&gt;&lt;a href='/file/170221resume.pdf'&gt;Resume&lt;/a&gt;&lt;li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p></nav>
+```
+It looks like a lot. But not that bad. Let&rsquo;s break it down.</p>
+
+<p>Actually Tania Rascia breaks it down quite well. <a href="https://www.taniarascia.com/what-is-bootstrap-and-how-do-i-use-it/">Tania&rsquo;s Site</a>.</p>
+
+<p>When you get to</p>
 
 <h3 id="edits-you-can-do">Edits You Can Do</h3>
 
