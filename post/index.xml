@@ -10,20 +10,18 @@
     <atom:link href="https://huntma.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Webeasy</title>
+      <title>Beginner Tutorial on Personal Website</title>
       <link>https://huntma.github.io/post/webeasy/</link>
       <pubDate>Tue, 18 Apr 2017 15:46:31 -0700</pubDate>
       
       <guid>https://huntma.github.io/post/webeasy/</guid>
       <description>
 
-&lt;h1 id=&#34;tutorial-for-a-personal-website&#34;&gt;Tutorial for a Personal Website&lt;/h1&gt;
-
-&lt;h3 id=&#34;for-absolute-beginners&#34;&gt;&lt;em&gt;For Absolute Beginners&lt;/em&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;beginner-friendly&#34;&gt;&lt;em&gt;*beginner friendly&lt;/em&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;p&gt;This tutorial is to get you a barebones, but acceptable personal website. It is meant as a starting off point. I expect you to journey on and learn more.
+&lt;p&gt;This tutorial will get you a barebones, but acceptable personal website. It is meant as a starting off point. I expect you to journey on and learn more.
 &lt;br&gt;
 &lt;br&gt;&lt;/p&gt;
 
@@ -59,23 +57,30 @@
 
 &lt;p&gt;Name it &amp;ldquo;[your username].github.io&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;When do I do the magic to upload my site on the web?&lt;/em&gt;&lt;br /&gt;
-&amp;gt; Github contains a program called Github Pages that automatically creates your websitefrom that project you just created. They made it so that it MUST have that name though. Pics below.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;When does my site go on the web?&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;What am I doing?&lt;/em&gt;&lt;br /&gt;
-&amp;gt; Github is an online repository. Is useful if you have multiple people working on a project.
-&amp;gt; We now have an account on the Github servers, and our project is on it.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Github contains a program called Github Pages that automatically creates your websitefrom that project you just created. They made it so that it MUST have that name though. Pics below.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;What am I doing?&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Github is an online repository. Is useful if you have multiple people working on a project.
+We now have an account on the Github servers, and our project is on it.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://huntma.github.io/image/170418_repo2.PNG&#34; alt=&#34;Repo2&#34; /&gt;
 TODO: change default size of images
 Since this is a new account, it asks to set up your first files and a local repo.&lt;br /&gt;
 Click Readme. Write anything. This is the first file in your project.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;More info&lt;/em&gt;&lt;br /&gt;
-&amp;gt; A README is a text file has information about the software that the creator thought that users should know before using. Like a user manual.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;More info&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;More info&lt;/em&gt;
-&amp;gt; index.html is a weird name. Why? Because when the browser is looking for html files to generate the page, the html standard says to look for this specific name.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A README is a text file has information about the software that the creator thought that users should know before using. Like a user manual.
+index.html is a weird name. Why? Because when the browser is looking for html files to generate the page, the html standard says to look for this specific name.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h3 id=&#34;overview-of-the-web&#34;&gt;Overview of the Web&lt;/h3&gt;
 
@@ -95,7 +100,7 @@ Click Readme. Write anything. This is the first file in your project.&lt;/p&gt;
 &lt;p&gt;Hyper Text - Meaning words can be hyperlinks
 Markup Language - A language to mark things up or annotate.&lt;/p&gt;
 
-&lt;p&gt;Cascaded Style Sheets - the syle of the content&lt;/p&gt;
+&lt;p&gt;Cascaded Style Sheets - the style of the content&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;CSS&lt;/em&gt;&lt;br /&gt;
 It is called cascaded because the order of them matters. Later ones will override previous ones which is useful for customizing. Say you use one of many premade CSS. Then you can change little things with just your own CSS. No need to go into their code.&lt;/p&gt;
@@ -118,24 +123,28 @@ HTML will hold your content. CSS will hold your style.
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;HTML element tags&lt;/strong&gt;&lt;br /&gt;
-We mentioned these &amp;ldquo;element&amp;rdquo; tags. They look like this.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HTML element tags&lt;/strong&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;div&amp;gt;
+&lt;p&gt;We mentioned these &amp;ldquo;element&amp;rdquo; tags. They look like this.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div&amp;gt;
 HELLLOOOOO
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Most common elements are:
-div - generic division
-h[#] - headers where h1 biggest and people use up to h6 usually
-p - paragraph
-a - link&lt;/p&gt;
+&lt;p&gt;Most common elements are:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;attributes&lt;/strong&gt;&lt;br /&gt;
+&lt;ul&gt;
+&lt;li&gt;div - generic division&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;h[#] - headers where h1 biggest and people use up to h6 usually&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;p - paragraph&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;a - link&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Attributes&lt;/strong&gt;&lt;br /&gt;
 Any element can have attributes.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;big&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;big&amp;quot;&amp;gt;
 HELLLOOOO
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -149,13 +158,14 @@ Most common are class and id. Use class is multiple. ID is supposed to be for on
 &lt;p&gt;CSS is to add style. It does this by referencing the elements and their attributes.
 It does this with selectors which look like&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;h1 {
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;/* this is a comment in CSS */
+h1 {
 	color: red;
 }
 
 .big {
-	height: 100%;
-	width: 100%;
+	color: blue;
+	font-family: monospace;
 }
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -165,23 +175,35 @@ It does this with selectors which look like&lt;/p&gt;
 
 &lt;h3 id=&#34;our-workflow&#34;&gt;Our Workflow.&lt;/h3&gt;
 
-&lt;p&gt;Github takes a couple minutes to update its websites.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Github takes a couple minutes to update its websites.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;We want to see immediate results, so we develop locally.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;We want to see immediate results, so we develop locally.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;You can view your site on TODO: add site&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Create folder mySite in convenient location.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;Change your site.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Make html &amp;ldquo;index.html&amp;rdquo; in it.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;Refresh the page.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Get path of &amp;ldquo;index.html&amp;rdquo; and put into address bar of browser to view site or you can drag the file to your browser.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Change your site.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Refresh the page.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;It will look like this&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://huntma.github.io/image/170423web0&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;basics&#34;&gt;Basics.&lt;/h3&gt;
 
-&lt;p&gt;We will build one piece of our website at a time. Create an &amp;ldquo;index.html&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;One piece at a time.&lt;/p&gt;
 
-&lt;p&gt;Copy this template&lt;/p&gt;
+&lt;p&gt;Copy this template into &amp;ldquo;index.html&amp;rdquo;. Edit the html file with any text editor.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
 &amp;lt;html&amp;gt;
 &amp;lt;head&amp;gt;
 	&amp;lt;!-- This is a comment --&amp;gt;
@@ -189,6 +211,7 @@ It does this with selectors which look like&lt;/p&gt;
 
 &amp;lt;body&amp;gt;
 	&amp;lt;!-- content goes here --&amp;gt;
+	Hello
 &amp;lt;/body&amp;gt;
 
 &amp;lt;/html&amp;gt;
@@ -204,81 +227,456 @@ It does this with selectors which look like&lt;/p&gt;
 
 &lt;h3 id=&#34;get-bootstrap&#34;&gt;Get Bootstrap&lt;/h3&gt;
 
-&lt;p&gt;Bootstrap is CSS. The best feature is they  make your website display properly on different device sizes.&lt;/p&gt;
+&lt;p&gt;Bootstrap is premade CSS. The best feature is they make your website display properly on different device sizes.&lt;/p&gt;
 
-&lt;p&gt;Add this to head&lt;/p&gt;
+&lt;p&gt;Add the following code inside the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;head&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;head&amp;gt;
 	&amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
 	&amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;IE=edge&amp;quot;&amp;gt;
 	&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1&amp;quot;&amp;gt;
 
-	&amp;lt;title&amp;gt;Hunt Ma&amp;lt;/title&amp;gt;
+	&amp;lt;title&amp;gt;[title of website]&amp;lt;/title&amp;gt;
 
-	&amp;lt;link href=&amp;quot;https://huntma.github.io//css/bootstrap.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;
-	&amp;lt;link href=&amp;quot;https://huntma.github.io//css/hunt.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;
+	&amp;lt;link href=&amp;quot;css/bootstrap.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;
+	&amp;lt;link href=&amp;quot;css/mycustom.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;
 &amp;lt;/head&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Change where it says my username to yours&lt;/p&gt;
+&lt;p&gt;Change the title.&lt;/p&gt;
+
+&lt;p&gt;Notice we have linked the bootstrap css and custom css sheets.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;More info&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Our custom is below bootstrap so that it will override. HTML docs are parsed from top to bottom so the latest CSS rules will prevail.
+&amp;ldquo;min&amp;rdquo; only means minified which means it has been compressed to make it smaller so the website can load faster.
+The paths we have on right now are relative to the root of our site.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Go on bootstrap website and download bootstrap. You don&amp;rsquo;t need the source, it just has extras.&lt;/p&gt;
+
+&lt;p&gt;Find &amp;ldquo;bootstrap.min.css&amp;rdquo; and put it in &amp;ldquo;[path to mySite]/css/&amp;ldquo;. That means make a folder called css in [mySite] and put the .css file into it.&lt;/p&gt;
+
+&lt;p&gt;Also make a file called &amp;ldquo;mycustom.css&amp;rdquo; and put it in the same folder.&lt;/p&gt;
+
+&lt;p&gt;We also need to add bootstrap javascript and jQuery. Add the following right before the &lt;code&gt;&amp;lt;/html&amp;gt;&lt;/code&gt; tag in your &amp;ldquo;index.html&amp;rdquo;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;script src=&amp;quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;js/bootstrap.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then go into the Bootstrap file you downloaded and copy &amp;ldquo;bootstrap.min.js&amp;rdquo; into &amp;ldquo;[mySite]/js/&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;It should look like this&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://huntma.github.io/image/170423web1&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;More info&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Javascript add action to our website. JQuery is a javascript library that bootstrap uses. Javascript &amp;gt; Jquery &amp;gt; bootstrap.js.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;navbar&#34;&gt;Navbar&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;```
-&amp;lt;nav class=&amp;quot;navbar navbar-inverse navbar-static-top&amp;quot;&amp;gt; 
-&amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
-    &amp;lt;div class=&amp;quot;navbar-header&amp;quot;&amp;gt;
-        &amp;lt;button type=&amp;quot;button&amp;quot; class=&amp;quot;navbar-toggle collapsed&amp;quot; data-toggle=&amp;quot;collapse&amp;quot; data-target=&amp;quot;#nav-example-1&amp;quot; aria-expanded=&amp;quot;false&amp;quot;&amp;gt;
-            &amp;lt;span class=&amp;quot;sr-only&amp;quot;&amp;gt;Toggle nav&amp;lt;/span&amp;gt;
-            &amp;lt;span class=&amp;quot;gicon-bar&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
-            &amp;lt;span class=&amp;quot;icon-bar&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
-            &amp;lt;span class=&amp;quot;icon-bar&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
-        &amp;lt;/button&amp;gt;
-        &amp;lt;a class=&amp;quot;navbar-brand&amp;quot; href=&amp;quot;/&amp;quot;&amp;gt;Hunt Ma&amp;lt;/a&amp;gt;
-        &amp;lt;/div&amp;gt;
-    &amp;lt;div class=&amp;quot;collapse navbar-collapse&amp;quot; id=&amp;quot;nav-example-1&amp;quot;&amp;gt;
-        &amp;lt;ul class=&amp;quot;nav navbar-nav navbar-right&amp;quot;&amp;gt;
-            &amp;lt;li&amp;gt;&amp;lt;a href=&#39;https://huntma.github.io/about&#39;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;li&amp;gt;
+&lt;p&gt;Let&amp;rsquo;s use an altered version of the Navbar example from Bootstrap that was inspired by Tania Rascia. I added my own things to make it professional.&lt;/p&gt;
 
-            &amp;lt;li class=&amp;quot;dropdown&amp;quot;&amp;gt;
-                &amp;lt;a href=&amp;quot;#&amp;quot; class=&amp;quot;dropdown-toggle&amp;quot; data-toggle=&amp;quot;dropdown&amp;quot; role=&amp;quot;button&amp;quot; aria-haspopup=&amp;quot;true&amp;quot; aria-expanded=&amp;quot;false&amp;quot;&amp;gt;Projects&amp;lt;span class=&amp;quot;caret&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; 
-                &amp;lt;ul class=&amp;quot;dropdown-menu&amp;quot;&amp;gt;
-                    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;Robotics&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-                    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;Coding&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-                    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;Photography&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-                &amp;lt;/ul&amp;gt;
-            &amp;lt;/li&amp;gt;
-            &amp;lt;li&amp;gt;&amp;lt;a href=&#39;https://huntma.github.io/post&#39;&amp;gt;Posts&amp;lt;/a&amp;gt;&amp;lt;li&amp;gt;
-            &amp;lt;li&amp;gt;&amp;lt;a href=&#39;https://huntma.github.io/file/170221resume.pdf&#39;&amp;gt;Resume&amp;lt;/a&amp;gt;&amp;lt;li&amp;gt;
-        &amp;lt;/ul&amp;gt;
-    &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;nav class=&amp;quot;navbar navbar-inverse navbar-static-top&amp;quot;&amp;gt; 
+	&amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+		&amp;lt;div class=&amp;quot;navbar-header&amp;quot;&amp;gt;
+			&amp;lt;button type=&amp;quot;button&amp;quot; class=&amp;quot;navbar-toggle collapsed&amp;quot; data-toggle=&amp;quot;collapse&amp;quot; data-target=&amp;quot;#nav-example-1&amp;quot; aria-expanded=&amp;quot;false&amp;quot;&amp;gt;
+				&amp;lt;span class=&amp;quot;sr-only&amp;quot;&amp;gt;Toggle nav&amp;lt;/span&amp;gt;
+				&amp;lt;span class=&amp;quot;gicon-bar&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
+				&amp;lt;span class=&amp;quot;icon-bar&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
+				&amp;lt;span class=&amp;quot;icon-bar&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
+			&amp;lt;/button&amp;gt;
+			&amp;lt;a class=&amp;quot;navbar-brand&amp;quot; href=&amp;quot;/&amp;quot;&amp;gt;[my name]&amp;lt;/a&amp;gt;
+			&amp;lt;/div&amp;gt;
+		&amp;lt;div class=&amp;quot;collapse navbar-collapse&amp;quot; id=&amp;quot;nav-example-1&amp;quot;&amp;gt;
+			&amp;lt;ul class=&amp;quot;nav navbar-nav navbar-right&amp;quot;&amp;gt;
+				&amp;lt;li&amp;gt;&amp;lt;a href=&#39;about&#39;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;li&amp;gt;
+
+				&amp;lt;li class=&amp;quot;dropdown&amp;quot;&amp;gt;
+					&amp;lt;a href=&amp;quot;#&amp;quot; class=&amp;quot;dropdown-toggle&amp;quot; data-toggle=&amp;quot;dropdown&amp;quot; role=&amp;quot;button&amp;quot; aria-haspopup=&amp;quot;true&amp;quot; aria-expanded=&amp;quot;false&amp;quot;&amp;gt;Projects&amp;lt;span class=&amp;quot;caret&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;	
+					&amp;lt;ul class=&amp;quot;dropdown-menu&amp;quot;&amp;gt;
+						&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;Robotics&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+						&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;Coding&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+						&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;Photography&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+					&amp;lt;/ul&amp;gt;
+				&amp;lt;/li&amp;gt;
+				&amp;lt;li&amp;gt;&amp;lt;a href=&#39;https://huntma.github.io/post&#39;&amp;gt;Posts&amp;lt;/a&amp;gt;&amp;lt;li&amp;gt;
+				&amp;lt;li&amp;gt;&amp;lt;a href=&#39;https://huntma.github.io/file/[myResume].pdf&#39;&amp;gt;Resume&amp;lt;/a&amp;gt;&amp;lt;li&amp;gt;
+			&amp;lt;/ul&amp;gt;
+		&amp;lt;/div&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;/nav&gt;
-```
-It looks like a lot. But not that bad. Let&amp;rsquo;s break it down.&lt;/p&gt;
+&lt;p&gt;It looks like a lot. But not that bad. Let&amp;rsquo;s break it down.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;More info&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The &amp;lsquo;a&amp;rsquo; tags are links. &amp;lsquo;href&amp;rsquo; says where to link to. We have link to places in our website that we have not created yet. &amp;ldquo;#&amp;rdquo; or &amp;lsquo;#&amp;rsquo; (doesen&amp;rsquo;t matter) is a placeholder. It doesn&amp;rsquo;t link to anywhere.&lt;/p&gt;
+
+&lt;p&gt;404&amp;rsquo;s happen when links point to things that don&amp;rsquo;t exist. Like we are linking to about, but we haven&amp;rsquo;t created one.&lt;/p&gt;
+
+&lt;p&gt;Another note about linking. Notice our paths are written absolute here. This is because the navbar will be on every page, so you can&amp;rsquo;t do relative paths. The leading &amp;lsquo;/&amp;rsquo; means that it will start from the base directory. This won&amp;rsquo;t work on local because the root will be the C:/ drive probably. When it is uploaded onto Github, it will work though.&lt;/p&gt;
+
+&lt;p&gt;All the weird classes are just key-value pairs. Like class=&amp;ldquo;collapse&amp;rdquo; means that it is part of the collapse class. This doesn&amp;rsquo;t mean anything by itself. Bootstrap has defined what that means for us in its css and js files.&lt;/p&gt;
+
+&lt;p&gt;Notice for the nave we are writing absolute paths from the root &amp;lsquo;/&amp;rsquo;. This is important because the navbar will be on every page so we can&amp;rsquo;t put relative paths. They won&amp;rsquo;t be correct on every page.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Actually Tania Rascia breaks it down quite well. &lt;a href=&#34;https://www.taniarascia.com/what-is-bootstrap-and-how-do-i-use-it/&#34;&gt;Tania&amp;rsquo;s Site&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;When you get to&lt;/p&gt;
+&lt;h3 id=&#34;jumbotron&#34;&gt;Jumbotron&lt;/h3&gt;
+
+&lt;p&gt;Jumbotron is like a big ad. Many people use one. Add this into the &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;jumbotron background&amp;quot;&amp;gt;
+	&amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+		&amp;lt;h1&amp;gt;Welcome to hunt.&amp;lt;/h1&amp;gt;
+		&amp;lt;p&amp;gt;This is a hugo theme that uses bootstrap and is well commented.&amp;lt;/p&amp;gt;
+		&amp;lt;br&amp;gt;
+		&amp;lt;p&amp;gt;&amp;lt;a class=&amp;quot;btn btn-primary btn-lg&amp;quot; href=&amp;quot;#&amp;quot; role=&amp;quot;button&amp;quot;&amp;gt;Button!&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;front-page-grid&#34;&gt;Front page grid&lt;/h3&gt;
+
+&lt;p&gt;In bootstrap you use rows that contain columns to organize.&lt;/p&gt;
+
+&lt;p&gt;It is separated into 12 cols.&lt;/p&gt;
+
+&lt;p&gt;Put this into the &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; tags of &amp;ldquo;index.html&amp;rdquo;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;container front-page&amp;quot;&amp;gt;
+	&amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;
+		&amp;lt;div class=&amp;quot;col-md-4&amp;quot;&amp;gt;
+			&amp;lt;span class=&amp;quot;glyphicon glyphicon-cloud glyphicon-large&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
+			&amp;lt;h3&amp;gt;About&amp;lt;/h3&amp;gt;
+			&amp;lt;p&amp;gt;In summary, it&#39;s about learning efficiently.&amp;lt;/p&amp;gt;
+		&amp;lt;/div&amp;gt;
+		&amp;lt;div class=&amp;quot;col-md-4&amp;quot;&amp;gt;
+			&amp;lt;span class=&amp;quot;glyphicon glyphicon-pencil glyphicon-large&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
+			&amp;lt;h3&amp;gt;Posts&amp;lt;/h3&amp;gt;
+			&amp;lt;p&amp;gt;Posts about any topic.&amp;lt;/p&amp;gt;
+		&amp;lt;/div&amp;gt;
+		&amp;lt;div class=&amp;quot;col-md-4&amp;quot;&amp;gt;
+			&amp;lt;span class=&amp;quot;glyphicon glyphicon-plus glyphicon-large&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
+			&amp;lt;h3&amp;gt;Projects&amp;lt;/h3&amp;gt;
+			&amp;lt;p&amp;gt;Check out my projects.&amp;lt;/p&amp;gt;
+		&amp;lt;/div&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Notice how we have three divs each of 4 units wide. That makes up 12 units which will fill up the screen the way bootstrap intended.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;More info&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;col-md-4 is kind of confusing. &amp;lsquo;md&amp;rsquo; means that for medium sized screens, the browser will look for any class with &amp;lsquo;md&amp;rsquo; in it and display that.
+There are
+  * xs&lt;br /&gt;
+  * sm
+  * md
+  * lg
+  * xl&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Tania gives a good explanation too.&lt;/p&gt;
+
+&lt;h3 id=&#34;add-clickable-boxes&#34;&gt;Add clickable boxes.&lt;/h3&gt;
+
+&lt;p&gt;We make each &lt;code&gt;&amp;lt;div class=&amp;quot;col-md-4&amp;quot;&amp;gt;&lt;/code&gt; a clickable link.&lt;/p&gt;
+
+&lt;p&gt;This messes up the color though, so add this to &amp;ldquo;mycustom.css&amp;rdquo;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;/*clickable-box class properties*/
+a .clickable {
+	color: white;
+}
+
+a .clickable:hover {
+	color: red;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So then overall it will look like this.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;container front-page&amp;quot;&amp;gt;
+	&amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;
+		&amp;lt;div class=&amp;quot;col-md-4&amp;quot;&amp;gt;
+			&amp;lt;a href=&amp;quot;about&amp;quot;&amp;gt;
+				&amp;lt;div class=&amp;quot;clickable&amp;quot;&amp;gt;
+					&amp;lt;span class=&amp;quot;glyphicon glyphicon-cloud glyphicon-large&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
+					&amp;lt;h3&amp;gt;About&amp;lt;/h3&amp;gt;
+					&amp;lt;p&amp;gt;In summary, it&#39;s about learning efficiently.&amp;lt;/p&amp;gt;
+				&amp;lt;/div&amp;gt;
+			&amp;lt;/a&amp;gt;
+		&amp;lt;/div&amp;gt;
+		&amp;lt;div class=&amp;quot;col-md-4&amp;quot;&amp;gt;
+		  &amp;lt;a href=&amp;quot;post&amp;quot;&amp;gt;
+				&amp;lt;div class=&amp;quot;clickable&amp;quot;&amp;gt;
+					&amp;lt;span class=&amp;quot;glyphicon glyphicon-pencil glyphicon-large&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
+					&amp;lt;h3&amp;gt;Posts&amp;lt;/h3&amp;gt;
+					&amp;lt;p&amp;gt;Posts about any topic.&amp;lt;/p&amp;gt;
+				&amp;lt;/div&amp;gt;
+			&amp;lt;/a&amp;gt;
+		&amp;lt;/div&amp;gt;
+		&amp;lt;div class=&amp;quot;col-md-4&amp;quot;&amp;gt;
+			&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;
+				&amp;lt;div class=&amp;quot;clickable&amp;quot;&amp;gt;
+					&amp;lt;span class=&amp;quot;glyphicon glyphicon-plus glyphicon-large&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
+					&amp;lt;h3&amp;gt;Projects&amp;lt;/h3&amp;gt;
+					&amp;lt;p&amp;gt;Check out my projects.&amp;lt;/p&amp;gt;
+				&amp;lt;/div&amp;gt;
+			&amp;lt;/a&amp;gt;
+		&amp;lt;/div&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;some-more-styling&#34;&gt;Some More Styling&lt;/h3&gt;
+
+&lt;p&gt;Put all of this into &amp;ldquo;mycustom.css&amp;rdquo;. Remember we want to override bootstrap&amp;rsquo;s css.&lt;/p&gt;
+
+&lt;p&gt;Get rid of the spacing at the bottom of the navbar.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.navbar {
+	margin-bottom: 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Change the color of the background and text&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;body {
+	background: #3E4649;
+	color: white;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Change how the headers look.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;h1,
+h2 {
+	font-weight:bold;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Change the jumbotron color and how the text is inside&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.jumbotron {
+	background: #27A967;
+	text-align: center;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Change the p&amp;rsquo;s of the jumbotron class.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.jumbotron p {
+	font-size: 25px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Change the button look. Tania calls it a ghost button.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.btn-primary {
+	color: white;
+	background-color: transparent;
+	border-color: white;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Change how the button looks when you hover over it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.btn-primary:hover {
+	color: #27A967;
+	background-color: white;
+	border-color: white;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Change the navbar color, the color of the navbar link, and how the nav items look when they are hovered.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
+/* navbar */
+.navbar-inverse {
+	background: #2E2F31;
+}
+
+/* navbar links */
+.navbar-inverse .navbar-nav li a {
+	color: white;
+	font-size: 16px;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	background: #27A967;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Change the dropdown menu background, each item in the dropdown menu, and how they look when you hover over them.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.dropdown-menu {
+	background: #2E2F31;
+}
+
+.dropdown-menu li a {
+	border: 10px;
+}
+
+/* li&#39;s of the dropdown of navbar */
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+	background: #2C463C;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Change how the front-page class items are aligned.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.front-page {
+	text-align:center;
+}
+
+.front-page p {
+	margin-bottom: 40px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;change-glyph-size&#34;&gt;Change Glyph Size&lt;/h3&gt;
+
+&lt;p&gt;This into CSS.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.glyphicon-large {
+	font-size: 40px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Notice we already had glyhpicon-large class. Aria-hidden is just a property that affects the look.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;span class=&amp;quot;glyphicon glyphicon-cloud glyphicon-large&amp;quot; aria-hidden=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;add-resume&#34;&gt;Add Resume&lt;/h3&gt;
+
+&lt;p&gt;Put your resume in &amp;ldquo;[mySite]/file/&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;This line in the nav is what links it and it is already in the &amp;ldquo;index.html&amp;rdquo;. Make it link to the name of your resume.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;li&amp;gt;&amp;lt;a href=&#39;file/[myResume].pdf&#39;&amp;gt;Resume&amp;lt;/a&amp;gt;&amp;lt;li&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;add-an-about-page&#34;&gt;Add an About page&lt;/h3&gt;
+
+&lt;p&gt;Make an &amp;ldquo;[mySite]/about/index.html&amp;rdquo;. Add this to it. You may recognize our navbar and
+our header and the javascript we added. That&amp;rsquo;s because every page on your website will have these. So use this following as a template for more pages.&lt;/p&gt;
+
+&lt;p&gt;If you want to add cool posts about projects. Put those in &amp;ldquo;[mySite]/post/&amp;ldquo;. Notice that the Post link links to this place. You will also need an &amp;ldquo;index.html&amp;rdquo; in the post folder because when you navigate to it. It will look for an index file. Ideally, that will contain links to all of your posts.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+		&amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;IE=edge&amp;quot;&amp;gt;
+		&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1&amp;quot;&amp;gt;
+	
+		&amp;lt;title&amp;gt;About Me&amp;lt;/title&amp;gt; 
+
+		&amp;lt;link href=&amp;quot;css/bootstrap.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;
+		&amp;lt;link href=&amp;quot;css/mycustom.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;
+	&amp;lt;/head&amp;gt;
+
+&amp;lt;body&amp;gt;
+
+&amp;lt;nav class=&amp;quot;navbar navbar-inverse navbar-static-top&amp;quot;&amp;gt; 
+	&amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+		&amp;lt;div class=&amp;quot;navbar-header&amp;quot;&amp;gt;
+			&amp;lt;button type=&amp;quot;button&amp;quot; class=&amp;quot;navbar-toggle collapsed&amp;quot; data-toggle=&amp;quot;collapse&amp;quot; data-target=&amp;quot;#nav-example-1&amp;quot; aria-expanded=&amp;quot;false&amp;quot;&amp;gt;
+				&amp;lt;span class=&amp;quot;sr-only&amp;quot;&amp;gt;Toggle nav&amp;lt;/span&amp;gt;
+				&amp;lt;span class=&amp;quot;icon-bar&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
+				&amp;lt;span class=&amp;quot;icon-bar&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
+				&amp;lt;span class=&amp;quot;icon-bar&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
+			&amp;lt;/button&amp;gt;
+			&amp;lt;a class=&amp;quot;navbar-brand&amp;quot; href=&amp;quot;/&amp;quot;&amp;gt;Hunt Ma&amp;lt;/a&amp;gt;
+		&amp;lt;/div&amp;gt;
+		&amp;lt;div class=&amp;quot;collapse navbar-collapse&amp;quot; id=&amp;quot;nav-example-1&amp;quot;&amp;gt;
+			&amp;lt;ul class=&amp;quot;nav navbar-nav navbar-right&amp;quot;&amp;gt;
+				&amp;lt;li&amp;gt;&amp;lt;a href=&#39;https://huntma.github.io/about&#39;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;li&amp;gt;
+				
+				&amp;lt;li class=&amp;quot;dropdown&amp;quot;&amp;gt;
+					&amp;lt;a href=&amp;quot;#&amp;quot; class=&amp;quot;dropdown-toggle&amp;quot; data-toggle=&amp;quot;dropdown&amp;quot; role=&amp;quot;button&amp;quot; aria-haspopup=&amp;quot;true&amp;quot; aria-expanded=&amp;quot;false&amp;quot;&amp;gt;Projects&amp;lt;span class=&amp;quot;caret&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;	
+					&amp;lt;ul class=&amp;quot;dropdown-menu&amp;quot;&amp;gt;
+						&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;Robotics&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+						&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;Coding&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+						&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;Photography&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+					&amp;lt;/ul&amp;gt;
+				&amp;lt;/li&amp;gt;
+				&amp;lt;li&amp;gt;&amp;lt;a href=&#39;https://huntma.github.io/post&#39;&amp;gt;Posts&amp;lt;/a&amp;gt;&amp;lt;li&amp;gt;
+				&amp;lt;li&amp;gt;&amp;lt;a href=&#39;https://huntma.github.io/file/[myResume].pdf&#39;&amp;gt;Resume&amp;lt;/a&amp;gt;&amp;lt;li&amp;gt;
+			&amp;lt;/ul&amp;gt;
+		&amp;lt;/div&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;
+
+&amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+	&amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;
+		&amp;lt;div class=&amp;quot;col-md-12&amp;quot;&amp;gt;
+			&amp;lt;h1&amp;gt;About Me&amp;lt;/h1&amp;gt;
+			&amp;lt;p&amp;gt;About meeeeeeeeeeeeeeeeeeeeeeeeeee&amp;lt;/p&amp;gt;
+		&amp;lt;/div&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;/body&amp;gt;
+
+	&amp;lt;script src=&amp;quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+	&amp;lt;script src=&amp;quot;js/bootstrap.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;edits-you-can-do&#34;&gt;Edits You Can Do&lt;/h3&gt;
+
+&lt;p&gt;Look at &amp;ldquo;Adding Custom Styles to Bootstrap&amp;rdquo; on Tania&amp;rsquo;s Site.&lt;/p&gt;
+
+&lt;p&gt;To add an image on the front page.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;/*background image*/
+
+.background {
+	background: url(&#39;/image/[myPic].JPG&#39;) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;continue-to-evolve&#34;&gt;Continue to Evolve!&lt;/h3&gt;
 
 &lt;ol&gt;
-&lt;li&gt;You can extend your website into a blog.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You can extend your website into a blog.
+Look into using a Static Site Generator. This site is made using Hugo. There are some pretty good tutorials out there, but to be honest I needed to use multiple ones to really learn how to do it. There&amp;rsquo;s no single, super-complete one out there.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Buy your own domain name and attach it to your website.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Look into using a Static Site Generator. This site is made using Hugo. There are some pretty good tutorials out there, but to be honest I needed to use multiple ones to really learn how to do it. There&amp;rsquo;s no single, super-complete one out there.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;More info&lt;/em&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-&lt;li&gt;Buy your own domain name and attach it to your website.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;More Info:&lt;br /&gt;
-All websites need to live somewhere. Ours lives on the Github servers which are actual computers sitting somewheres wired up to the internet. This website just needs an easy name to remember instead of a complicated IP address like 198.162.0.0. This assigning of names to IP addresses is handled by big organizations called Domain Name Registrars.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;All websites need to live somewhere. Ours lives on the Github servers which are actual computers sitting somewheres wired up to the internet. This website just needs an easy name to remember instead of a complicated IP address like 198.162.0.0. This assigning of names to IP addresses is handled by big organizations called Domain Name Registrars.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Learn about Github&lt;/li&gt;

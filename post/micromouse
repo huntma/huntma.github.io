@@ -1,0 +1,104 @@
++++
+date = "2017-06-03T14:14:32-07:00"
+title = "micromouse"
+menu = ""
+Categories = []
+Tags = []
+Description = ""
+
++++
+
+### Choosing Components
+
+
+
+### Making PCB:
+
+* This is not comprehensive, just the basics. Please read some other resources. We are using _Eagle_ program.
+
+* Check for choke points in planes. Don't want those.
+
+* Use planes generously. I suggest starting out with a big GND and PWR planes(may have multiple voltage levels).
+
+* Size traces appropriately. More current expected means bigger trace. 80mm will blow up for a 540 motor.
+
+* Size vias to their traces. Should be approx. same size.
+
+* Caps at the VDD VSS pairs on MCU, battery, voltage regulators. Parts datasheets usually have recommendations for these. I suggest you follow them.
+
+* Caps should physically be close to the parts they are meant for.
+
+### Soldering MCU
+
+When doing complex things, start simple.
+
+Connect everything to upload code
+
+* SWCLK
+* SWIO
+* PWR and GND
+
+If not working
+
+Check continuity - check each pair VDD and VSS (for STM32 VDDA and VSSA need to be connected too).
+
+Check that MCU pins are not touching (we are using LQFP64 so they are small and close together). May need microscope.
+
+Check the debugger pins are connected to the correct pins on MCU (For our STM32F411RE, they are PA13 and PA14 I think).
+
+Check pins have solid connection to pad. Sometimes pushing iron down onto top of pin will heat the solder a bit and solidify connection.
+
+### Connecting VDDA and VSSA
+
+The STM32F411RE chip has VDDA and VSSA pins which power the analog components and I forgot to connect them on the PCB. I spent a lot of time trying to figure out why the debugger could not find my chip. I made sure all the VDD's had 3.3V and that I didn't have any shorts between PWR and GND.
+
+My PCB has analog ground, so I used that for VSSA. VDDA goes to 3.3V. There was no way I had enough time to print another PCB in time for competition, so I decided to manually connect wires. 
+
+I used 30 gauge wire, a sharp soldering iron, thin solder, and a microscope to attach the wires to the MCU pins. Connecting to 3.3V and AGND are easy by just using the vias.
+
+* If you accidentally short adjacent pins, use solder wick. Some flux helps.
+
+* Shining a light helps with microscope clarity.
+
+* Try depositing solder onto the mcu pin first. If unsuccessful, deposit onto the wire first.
+
+* After testing for shorts and that the chip works. Dab hot glue to hold it together.
+
+
+### Soldering SMD
+
+Helps with microscope, tweezers, thin solder, sharp tip.
+
+Put some solder on a first, preferably the one for the corner of component.
+
+Double check part orientation, reheat solder and afix the part.
+
+Check that all pins are aligned with pads.
+
+Solder the rest. You want to heat the pad mostly if you can. Some of the iron tip will touch the pin, that's okay but don't leave it on too long.
+
+Insert solder into joint. Try to get it to melt near the joint.
+
+### Using Solder Wick
+
+Solder wick is copper braid. I think melted solder likes to stick to copper so it works like a sponge.
+
+Use flux, a liquid that may come in a syringe that distributes heat so you can melt solder in tight spaces. Then place wick on soldered joint and use iron to heat the wick. The wick will transfer heat to solder, while flux will help too. Then solder will absorb onto the copper wick.
+
+### Part sizes 0603
+
+You will see this for resistors, caps, leds, and other passives. It is a standard size.
+
+This is a good combo of smallness and also ease of assembly. I would not go smaller.
+
+### Micromouse code
+
+Goal - As simple as possible.
+
+Encoders always track how wheels are rotating. InterruptIn
+
+IR leds always pulsing to determine proximity to walls. Could use a timed function that interrupts every set amount of time. Too complicated. We can structure the main loop to read IR's as fast as we need them.
+
+Go straights perfectly using PID. (6 hours)
+
+Turn 90 degrees perfectly using PID. (3 hours)

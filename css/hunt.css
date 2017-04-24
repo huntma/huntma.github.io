@@ -57,6 +57,7 @@ h2 {
 }
 
 /* li's of the dropdown of navbar */
+/* maybe don't need the nav classes - don't seem to make difference */
 .navbar-inverse .navbar-nav .dropdown-menu li a:hover {
 	background: #2C463C;
 }
